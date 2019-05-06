@@ -6,8 +6,7 @@
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "snapshots": "const PercyScript = require('@percy/script'); PercyScript.run(async (page, percySnapshot) => {await page.goto('http://10.0.75.1:8080/'); await percySnapshot('homepage');});"
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,6 @@
   "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.2",
-    "@percy/script": "^1.0.0",
     "luxon": "^1.12.1",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2"
@@ -33,8 +31,6 @@
   "dependencies": {
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
-    "percy": "^3.0.3",
-    "percy-client": "^3.0.11",
     "uglify-es": "^3.3.9"
   }
 }
