@@ -31,6 +31,8 @@
   "dependencies": {
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
+    "percy": "^3.0.3",
+    "percy-client": "^3.0.11",
     "uglify-es": "^3.3.9"
   }
 }
