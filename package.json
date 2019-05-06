@@ -6,7 +6,8 @@
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "snapshots": "const PercyScript = require('@percy/script'); PercyScript.run(async (page, percySnapshot) => {await page.goto('http://10.0.75.1:8080/'); await percySnapshot('homepage');});"
   },
   "repository": {
     "type": "git",
