@@ -23,12 +23,12 @@ jobs:
           name: install dependencies
           command: |
             npm install
-            npm install percy-client
+            gem install percy-cli
 
       # run tests!
       - run:
           name: run tests
           command: |
             npm run build
-            percy snapshot_site
+            percy snapshot _site
             
